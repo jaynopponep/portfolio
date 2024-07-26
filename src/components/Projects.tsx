@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
     return (
         <main id="Projects"
-              className="h-[700px] flex flex-col items-center justify-center font-basicsans text-[60px]">
+              className="h-[700px] flex flex-col items-center justify-center font-basicsans text-[70px]">
             <div>
                 Projects
             </div>

@@ -16,12 +16,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#resume" className="text-white hover:text-gray-300">
-                            Resume
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#about" className="text-white hover:text-gray-300">
+                        <Link href="#mytools" className="text-white hover:text-gray-300">
                             My Tools
                         </Link>
                     </li>
