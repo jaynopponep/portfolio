@@ -7,7 +7,7 @@ export default function Experiences() {
             <div className="mb-8">
                 Experiences
             </div>
-            <div className="text-[35px] space-y-4 -translate-x-20">
+            <div className="text-[35px] space-y-4">
                 <div>
                     <div className="flex items-center">
                         <Image src="/ctp-logo.png"
@@ -20,7 +20,7 @@ export default function Experiences() {
                     <div className="text-[27px] text-[#1591ea]">
                         Data Science Fellow
                         <div className="text-[20px] text-[#000000]">
-                            <ul className="list-disc">
+                            <ul className="list-disc font-arsmaquette">
                                 <li>
                                     Receive mentorship and coaching for technical prep and mock interviews
                                 </li>
@@ -43,7 +43,7 @@ export default function Experiences() {
                     <div className="text-[27px] text-[#1591ea]">
                         Software Engineering Fellow
                         <div className="text-[20px] text-[#000000]">
-                            <ul className="list-disc">
+                            <ul className="list-disc font-arsmaquette">
                                 <li>
                                     Develop full-stack applications integrated with AI libraries throughout 7 weeks and participate in weekly hackathons
                                 </li>
@@ -63,7 +63,7 @@ export default function Experiences() {
                     <div className="text-[27px] text-[#1591ea]">
                         CTIIC Research Associate Fellow
                         <div className="text-[20px] text-[#000000]">
-                            <ul className="list-disc">
+                            <ul className="list-disc font-arsmaquette">
                                 <li>
                                     Co-developed an AI-driven tool using the Scikit-Learn pipeline to classify text as AI generated or human written at a 70% accuracy
                                 </li>
@@ -83,7 +83,7 @@ export default function Experiences() {
                     <div className="text-[27px] text-[#1591ea]">
                         STEM Course Development Intern
                         <div className="text-[20px] text-[#000000]">
-                            <ul className="list-disc">
+                            <ul className="list-disc font-arsmaquette">
                                 <li>
                                     Wrote 8 basic programing courses per week for middle school students, totaling up to 60~ courses
                                 </li>
