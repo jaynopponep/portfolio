@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Experiences() {
     return (
-        <main id="experiences" className="h-[700px] flex flex-col items-center justify-center font-basicsans text-[70px] -mt-8">
+        <main id="experiences" className="h-[700px] flex flex-col items-center justify-center font-basicsans text-[70px]">
             <div className="mb-8">
                 Experiences
             </div>
