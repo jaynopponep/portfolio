@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLogoGithub } from "react-icons/io5";
+import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
     return (
         <main id="Projects"
@@ -32,14 +33,18 @@ export default function Projects() {
                             eboard.</p>
                         <a href="https://github.com/BYTE-Club-CCNY/byte" target="_blank"
                            className="inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm">
-                            <IoLogoGithub style={{ fontSize: '36px' }} />
+                            <IoLogoGithub style={{fontSize: '36px'}}/>
+                        </a>
+                        <a href="https://byteccny.com/" target="_blank"
+                           className="ml-4 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm">
+                            <FaExternalLinkAlt style={{fontSize: '36px'}}/>
                         </a>
                     </div>
                 </div>
                 <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow">
                     <img src="/fivebhais.gif" className="w-[100%] h-[200px]" alt="Five Bhais"/>
                     <div className="p-[16px]">
-                        <h3 className="text-[28px] mb-[8px]">Five Bhais Restaurant</h3>
+                    <h3 className="text-[28px] mb-[8px]">Five Bhais Restaurant</h3>
                         <p className="text-gray-600 text-[15px] leading-tight">
                             A project built with other engineers demonstrating an online restaurant system where users are able to
                         order takeout or delivery, and make dinner reservations after shopping on the menu. Built with NextJS and PyMongo
