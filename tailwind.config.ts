@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         arsmaquette: ['ArsMaquette'],
-        basicsans: ['BasicSans']
+        basicsans: ['BasicSans'],
+      },
+      boxShadow: {
+        'customShadow': '0px 2px 4px rgba(0,0,0,0.2)',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
