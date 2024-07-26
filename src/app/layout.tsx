@@ -26,6 +26,8 @@ export default function RootLayout({
       {children}
       <Projects/>
       <Experiences/>
+      <MyTools/>
+      <Resume/>
       </body>
     </html>
   );
