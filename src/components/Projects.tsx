@@ -23,9 +23,9 @@ export default function Projects() {
                         </a>
                     </div>
                 </div>
-                <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow">
+                <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
                     <img src="/byte_website.gif" className="w-[100%] h-[200px]" alt="BYTE Website"/>
-                    <div className="p-[16px]">
+                    <div className="p-[16px] flex-grow">
                         <h3 className="text-[28px] mb-[8px]">BYTE Club Website</h3>
                         <p className="text-gray-600 text-[15px] leading-tight">
                             A website built with NextJS to showcase CCNY's BYTE Club website, its projects, and its
@@ -44,10 +44,10 @@ export default function Projects() {
                             A project built with other engineers demonstrating an online restaurant system where users are able to
                         order takeout or delivery, and make dinner reservations after shopping on the menu. Built with NextJS and PyMongo
                         (MongoDB Atlas)</p>
-                        <a href="https://github.com/jaynopponep/five-bhais" target="_blank"
-                           className="inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm mt-auto">
-                            <IoLogoGithub style={{ fontSize: '36px' }} />
-                        </a>
+                            <a href="https://github.com/jaynopponep/five-bhais" target="_blank"
+                               className="inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm">
+                                <IoLogoGithub style={{fontSize: '36px'}}/>
+                            </a>
                     </div>
                 </div>
             </div>
