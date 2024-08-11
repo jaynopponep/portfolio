@@ -26,7 +26,7 @@ export default function Projects() {
                         </p>
                         <div className="flex items-center justify-between">
                             <div>
-                                <a href="https://github.com/jaynopponep/cli-weather" target="_blank"
+                                <a href="https://github.com/jaynopponep/schedule-snake" target="_blank"
                                    className="inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm">
                                     <IoLogoGithub style={{fontSize: '36px'}}/>
                                 </a>
