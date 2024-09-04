@@ -74,10 +74,11 @@ export default function Experiences() {
             <div className="text-[20px] text-[#000000]">
               <ul className="list-disc font-arsmaquette">
                 <li>
-                  Co-developed an AI-driven tool using the Scikit-Learn pipeline
-                  to classify text as AI generated or human written at a 70%
-                  accuracy
+                  Collaborated with an engineer in developing an AI-driven tool using the Scikit-Learn pipeline 
                 </li>
+				<li>
+				  Achieved a 70% accuracy on an AI-detector tool that classifies text as AI-generated or human written
+				</li>
               </ul>
             </div>
           </div>
@@ -97,7 +98,7 @@ export default function Experiences() {
             <div className="text-[20px] text-[#000000]">
               <ul className="list-disc font-arsmaquette">
                 <li>
-                  Wrote 8 basic programing courses per week for middle school
+                  Wrote 8 beginner-friendly programing courses per week for middle school
                   students, totaling up to 60~ courses
                 </li>
               </ul>

@@ -6,7 +6,7 @@ export default function Home() {
     <main className="bg-[#3a4b59] text-white text-4xl h-[450px] flex items-center justify-center font-arsmaquette w-full">
       <div className="space-y-4 font-basicsans text-center w-full px-6">
         <div className="font-semibold">Hi, I'm Jay</div>
-        <div>Aspiring Software Engineer</div>
+        <div>JavaScript Software Engineer</div>
         <div>CS Student @ CCNY</div>
         <div className="flex space-x-4 justify-center">
           <div>
