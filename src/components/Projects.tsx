@@ -11,9 +11,9 @@ export default function Projects() {
   return (
     <main
       id="Projects"
-      className="flex flex-col items-center justify-center font-basicsans text-[70px]"
+      className="flex flex-col items-center justify-center font-extrabold text-[70px]"
     >
-      <div>Projects</div>
+      <div>PROJECTS</div>
       <div className="flex justify-center flex-wrap">
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
           {" "}
