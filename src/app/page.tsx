@@ -11,7 +11,7 @@ export default function Home() {
             >
               Hi, I'm Jay!
 
-              <span className="sm:block">I'm a Full-Stack Go & Python Developer </span>
+              <span className="sm:block"> I'm a Full-Stack Go & Python Developer </span>
             </h1>
 
             <p className="mx-auto mt-4 max-w-0.5xl sm:text-4xl/relaxed">

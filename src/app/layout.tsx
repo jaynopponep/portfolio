@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
-import MyTools from "@/components/MyTools";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +22,6 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Experiences />
         <Projects />
-        <MyTools />
       </body>
     </html>
   );
