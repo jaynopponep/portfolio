@@ -2,7 +2,7 @@ import React from "react";
 import { IoLogoGithub, IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
 import { FaExternalLinkAlt, FaDiscord } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { SiNextdotjs, SiPython, SiAmazondynamodb, SiLangchain, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
+import { SiNextdotjs, SiPython, SiAmazondynamodb, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
 
@@ -80,7 +80,7 @@ export default function Projects() {
             </a>
             <div className="flex flex-row space-x-[2.5px] mr-2">
               <FaDiscord className="w-[40px]"/>
-              <SiLangchain className="w-[42px]"/>
+              {/*<SiLangchain className="w-[42px]"/>*/}
               <SiAmazondynamodb className="w-[32px]"/>
               <FaGolang className="w-[32px]"/>
             </div>
