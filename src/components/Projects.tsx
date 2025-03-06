@@ -2,11 +2,9 @@ import React from "react";
 import { IoLogoGithub, IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
 import { FaExternalLinkAlt, FaDiscord } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { SiNextdotjs, SiPython } from "react-icons/si";
-import { SiAmazondynamodb, SiLangchain, SiOpenai } from "react-icons/si";
+import { SiNextdotjs, SiPython, SiAmazondynamodb, SiLangchain, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
-import { SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
 
 export default function Projects() {
   return (
@@ -17,9 +15,11 @@ export default function Projects() {
       <div className="text-5xl font-extrabold text-center text-gray-900 mb-12">PROJECTS</div>
       <div className="flex justify-center flex-wrap">
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
-          {" "}
-          {}
-          <a href="https://spoileralert.nyc/">
+          <a
+              href="https://spoileralert.nyc/"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
             <img
                 src="/SPOILERALERT.gif"
                 className="w-[325px] h-[200px]"
@@ -37,16 +37,13 @@ export default function Projects() {
               retrieve the data.
             </p>
           </div>
-          {}
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <a
                 href="https://github.com/BaljinderHothi/SpoilerAlert"
                 target="_blank"
                 className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
             >
-              <IoLogoGithub style={{ fontSize: "36px" }} />
+              <IoLogoGithub className="text-[36px]" />
             </a>
             <div className="flex flex-row space-x-[2.5px] mr-2">
               <SiNextdotjs className="w-[32px]" />
@@ -58,8 +55,6 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
-          {" "}
-          {}
           <a href="https://discord.com/oauth2/authorize?client_id=1299060600860839957&permissions=8&integration_type=0&scope=bot">
             <img
                 src="/Silvercord.gif"
@@ -68,8 +63,6 @@ export default function Projects() {
             />
           </a>
           <div className="p-[16px] flex-grow">
-            {" "}
-            {}
             <h3 className="text-[28px] mb-[8px]">Silvercord</h3>
             <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
               Silvercord is a Discord bot, an assistant for supporting you in enrolling into future
@@ -77,16 +70,13 @@ export default function Projects() {
               to pump up your high score to your Discord server's leaderboard!
             </p>
           </div>
-          {}
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <a
                 href="https://github.com/BYTE-Club-CCNY/Silvercord"
                 target="_blank"
                 className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
             >
-              <IoLogoGithub style={{ fontSize: "36px" }} />
+              <IoLogoGithub className="text-[36px]" />
             </a>
             <div className="flex flex-row space-x-[2.5px] mr-2">
               <FaDiscord className="w-[40px]"/>
@@ -113,14 +103,12 @@ export default function Projects() {
             </p>
           </div>
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <a
               href="https://github.com/jaynopponep/schedule-snake"
               target="_blank"
               className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
             >
-              <IoLogoGithub style={{ fontSize: "36px" }} />
+              <IoLogoGithub className="text-[36px]" />
             </a>
             <div className="flex flex-row space-x-[2.5px] mr-2">
               <SiNextdotjs className="w-[32px]" />
@@ -130,16 +118,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
-          {" "}
-          {}
           <img
             src="/dovelop-cli.gif"
             className="w-[325px] h-[200px]"
             alt="Dovelop AI"
           />
           <div className="p-[16px] flex-grow">
-            {" "}
-            {}
             <h3 className="text-[28px] mb-[8px]">Dovelop AI</h3>
             <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
               A CLI to do list application made to improve productivity for
@@ -149,16 +133,13 @@ export default function Projects() {
               for task breakdowns, and local JSON data to store to do list data
             </p>
           </div>
-          {}
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <a
               href="https://github.com/jaynopponep/dovelop-CLI"
               target="_blank"
               className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
             >
-              <IoLogoGithub style={{ fontSize: "36px" }} />
+              <IoLogoGithub className="text-[36px]" />
             </a>
             <div className="flex flex-row  mr-2">
               <SiOpenai className="w-[32px]" />
@@ -167,40 +148,33 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
-          {" "}
-          {}
           <img
             src="/byte_website.gif"
             className="w-[325px] h-[200px]"
             alt="BYTE Website"
           />
           <div className="p-[16px] flex-grow">
-            {" "}
-            {}
             <h3 className="text-[28px] mb-[8px]">BYTE Club Website</h3>
             <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
               A website built with Next.JS to showcase CCNY's BYTE Club website,
               its projects, and its eboard.
             </p>
           </div>
-          {}
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <div className="flex items-center justify-between mt-auto mb-[10px]">
               <a
                 href="https://github.com/BYTE-Club-CCNY/byte"
                 target="_blank"
                 className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
               >
-                <IoLogoGithub style={{ fontSize: "36px" }} />
+                <IoLogoGithub className="text-[36px]" />
               </a>
               <a
                 href="https://byteccny.com/"
                 target="_blank"
                 className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
               >
-                <FaExternalLinkAlt style={{ fontSize: "36px" }} />
+                <FaExternalLinkAlt className="text-[36px]" />
               </a>
             </div>
             <div className="flex flex-row space-x-[6px] mr-2">
@@ -210,16 +184,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
-          {" "}
-          {}
           <img
             src="/fivebhais.gif"
             className="w-[325px] h-[200px]"
             alt="Five Bhais"
           />
           <div className="p-[16px] flex-grow">
-            {" "}
-            {}
             <h3 className="text-[28px] mb-[8px]">Five Bhais Restaurant</h3>
             <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
               A project built with other engineers demonstrating an online
@@ -229,16 +199,13 @@ export default function Projects() {
               <strong>MongoDB Atlas</strong>.
             </p>
           </div>
-          {}
           <div className="flex items-center justify-between mt-auto">
-            {" "}
-            {}
             <a
               href="https://github.com/jaynopponep/five-bhais"
               target="_blank"
               className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
             >
-              <IoLogoGithub style={{ fontSize: "36px" }} />
+              <IoLogoGithub className="text-[36px]" />
             </a>
             <div className="flex flex-row space-x-[2px] mr-2">
               <SiNextdotjs className="w-[32px]" />
