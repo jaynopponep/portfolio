@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         arsmaquette: ['ArsMaquette'],
         basicsans: ['BasicSans'],
+        interregular: ['InterRegular'],
       },
       boxShadow: {
         'customShadow': '0px 2px 4px rgba(0,0,0,0.2)',
