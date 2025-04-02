@@ -52,7 +52,7 @@ const experiences = [
 
 export default function Experiences() {
   return (
-      <section id="experiences" className="bg-gray-100 py-16">
+      <section id="experiences" className="bg-[#e1edd0] py-16">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-extrabold text-center text-gray-900 mb-12">
             EXPERIENCES

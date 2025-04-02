@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <main
       id="Projects"
-      className="flex flex-col items-center justify-center font-extrabold text-[70px]"
+      className="bg-[#e1edd0] flex flex-col items-center justify-center font-extrabold text-[70px]"
     >
       <div className="text-5xl font-extrabold text-center text-gray-900 mb-12">PROJECTS</div>
       <div className="flex justify-center flex-wrap">
