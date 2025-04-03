@@ -9,10 +9,10 @@ import { DiMysql } from "react-icons/di";
 export default function Projects() {
   return (
     <main
-      id="Projects"
+      id="projects"
       className="bg-[#e1edd0] flex flex-col items-center justify-center font-extrabold text-[70px]"
     >
-      <div className="text-5xl font-extrabold text-center text-gray-900 mb-12">PROJECTS</div>
+      <div className="text-5xl font-extrabold text-center text-[#080b05] mb-12">PROJECTS</div>
       <div className="flex justify-center flex-wrap">
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
           <a

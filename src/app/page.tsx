@@ -4,15 +4,16 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Home() {
   return (
       <section className="bg-[#e1edd0] text-white">
-        <div className="mx-auto px-4 py-32 lg:flex lg:h-[60vh] lg:items-center">
+        <div className="mx-auto px-4 py-32 pt-16 max-w-[80rem] lg:flex lg:h-[90vh] lg:items-center">
           <div className="mx-auto w-full text-center">
-            <h1
-                className="bg-[#080b05] bg-clip-text text-4xl font-heading font-bold text-transparent sm:text-4xl"
-            >
-              Hi, I'm Jay!
-                <span> I'm studying Computer Science + Applied Mathematics at </span>
-                <span className="text-[#8f9c7c]">CCNY!</span>
-            </h1>
+              <h1
+                  className="bg-[#080b05] bg-clip-text text-4xl font-heading font-bold text-transparent sm:text-4xl"
+                  style={{WebkitTextStroke: '0.5px #080b05'}}
+              >
+                  Hi, I'm Jay.
+                  <span> I'm studying Computer Science + Applied Mathematics at </span>
+                  <span className="text-[#8f9c7c]" style={{WebkitTextStroke: '0.5px #8f9c7c'}}>CCNY!</span>
+              </h1>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                   <a
                       className="relative flex items-center justify-center w-full rounded-sm border border-gray-800 bg-[#080b05] px-5 py-3 text-sm font-medium text-white overflow-hidden transition-all duration-300 ease-in-out sm:w-auto
@@ -21,7 +22,7 @@ export default function Home() {
                       target="_blank"
                   >
                       <span className="absolute inset-0 bg-white w-0 transition-all duration-175 ease-in-out group-hover:w-full"></span>
-                      <span className="relative group-hover:text-gray-800 text-xl leading-none">
+                      <span className="relative group-hover:text-gray-800 font-heading text-xl leading-none">
                           Resume
                       </span>
                   </a>

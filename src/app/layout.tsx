@@ -3,6 +3,7 @@ import { Inter, Belgrano, Convergence } from "next/font/google";
 import "./globals.css";
 import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${belgrano.variable} ${convergence.variable}`}>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
+      <Navbar/>
         <main className="flex-grow">{children}</main>
         <Experiences />
         <Projects />
