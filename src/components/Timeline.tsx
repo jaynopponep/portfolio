@@ -17,8 +17,17 @@ type TimelineProps = {
 const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
     const timelineEntries: TimelineEntry[] = [
         {
+            title: "Software Engineer Intern",
+            date: "June 2025 - Present",
+            company: "QAD Redzone",
+            icon: "/redzone.webp",
+            description: [
+                "QAD Redzone web applications and services with Vue.JS & TypeScript",
+            ]
+        },
+        {
             title: "Software Engineer",
-            date: "January 2025 - Present",
+            date: "January 2025 - May 2025",
             company: "Easy Meets",
             icon: "/easy_meets_logo.jpeg",
             description: [
@@ -38,7 +47,7 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
         },
         {
             title: "Machine Learning & Open Source Fellow",
-            date: "July 2024 - Present",
+            date: "July 2024 - May 2025",
             company: "CUNY Tech Prep",
             icon: "/ctp-logo.png",
             description: [
@@ -62,7 +71,7 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
         <section className="py-24 bg-[#e1edd0]">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-[#080b05]">{title}</h2>
+                    <h2 className="text-4xl font-inter font-extrabold text-[#080b05]">{title}</h2>
                 </div>
 
                 <div className="relative">
@@ -85,12 +94,12 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
                             </div>
 
                             <div className="float-left w-[35%] pr-24 text-right">
-                                <h3 className="text-xl font-bold text-[#8f9c7c]">{entry.title}</h3>
+                                <h3 className="text-xl font-inter font-extrabold text-[#8f9c7c]">{entry.title}</h3>
                                 <p className="text-sm text-gray-500">{entry.date}</p>
                             </div>
 
                             <div className="ml-[35%] pl-16">
-                                <h4 className="text-lg font-semibold text-gray-800 relative pb-5 mb-4 after:content-[''] after:block after:h-[3px] after:w-12 after:bg-black/20 after:absolute after:left-0 after:bottom-0">
+                                <h4 className="text-lg font-inter font-extrabold text-gray-800 relative pb-5 mb-4 after:content-[''] after:block after:h-[3px] after:w-12 after:bg-black/20 after:absolute after:left-0 after:bottom-0">
                                     {entry.company}
                                 </h4>
                                 <div>
