@@ -52,9 +52,9 @@ const experiences = [
 
 export default function Experiences() {
   return (
-      <section id="experiences" className="bg-[#e1edd0] py-6">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-extrabold text-center text-[#080b05] mb-12">
+      <section id="experiences" className="bg-[#e1edd0] py-6 font-inter font-extrabold">
+        <div className="max-w-7xl mx-auto px-6 font-inter">
+          <h2 className="font-inter font-extrabold text-6xl text-center text-[#080b05] mb-12">
             My Experiences
           </h2>
 
@@ -67,8 +67,8 @@ export default function Experiences() {
                     }`}
                 >
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-gray-900">{exp.title}</h3>
-                    <p className="text-lg text-blue-600 font-semibold">
+                    <h3 className="text-2xl text-gray-900">{exp.title}</h3>
+                    <p className="text-lg text-blue-600">
                       {exp.role}
                     </p>
                     <ul className="mt-2 list-disc list-inside text-gray-700 text-md">

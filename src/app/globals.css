@@ -23,8 +23,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Belgrano';
+  src: url("/fonts/belgrano.ttf") format('truetype');
+  font-style: normal;
+}
 
-/* Optional: Apply the custom font globally */
+@font-face {
+  font-family: 'Convergence';
+  src: url("/fonts/convergence.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/inter.ttf") format('truetype');
+  font-style: normal;
+}
+
 body {
   font-family: 'ArsMaquette', sans-serif;
 }

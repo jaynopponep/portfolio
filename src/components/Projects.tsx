@@ -10,9 +10,9 @@ export default function Projects() {
   return (
     <main
       id="projects"
-      className="bg-[#e1edd0] flex flex-col items-center justify-center font-extrabold text-[70px]"
+      className="bg-[#e1edd0] flex flex-col items-center justify-center font-inter font-extrabold text-[70px]"
     >
-      <div className="text-5xl font-extrabold text-center text-[#080b05] mb-12">PROJECTS</div>
+      <div className="text-5xl font-inter font-extrabold text-center text-[#080b05] mb-12">PROJECTS</div>
       <div className="flex justify-center flex-wrap">
         <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
           <a
@@ -29,7 +29,7 @@ export default function Projects() {
           <div className="p-[16px] flex-grow">
             {" "}
             {}
-            <h3 className="text-[28px] mb-[8px]">Spoiler Alert</h3>
+            <h3 className="text-[28px] mb-[8px] font-inter">Spoiler Alert</h3>
             <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
               Spoiler Alert is a full-stack application where given an image or a search query,
               retrieves data from the FDA API of any active recalls that are currently being investigated!
