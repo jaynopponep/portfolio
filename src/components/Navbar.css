@@ -1,0 +1,37 @@
+.navbar.nav {
+  background-color: var(--backgroundMain);
+  padding: 0.75rem;
+}
+
+.navbar .container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .list {
+  display: flex;
+  gap: 2.5rem;
+  font-family: 'SwitzerMedium', serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar .list {
+    gap: 5rem;
+    font-size: 1.875rem;
+  }
+}
+
+.navbar .link {
+  color: var(--textPrimary);
+}
+
+.navbar .link:hover {
+  color: rgb(209 213 219);
+}

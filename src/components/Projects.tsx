@@ -5,16 +5,14 @@ import { FaGolang } from "react-icons/fa6";
 import { SiNextdotjs, SiPython, SiAmazondynamodb, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
+import "./Projects.css";
 
 export default function Projects() {
   return (
-    <main
-      id="projects"
-      className="bg-[#e1edd0] flex flex-col items-center justify-center font-inter font-extrabold text-[70px]"
-    >
-      <div className="text-5xl font-inter font-extrabold text-center text-[#080b05] mb-12">PROJECTS</div>
-      <div className="flex justify-center flex-wrap">
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+    <main id="projects" className="projects main">
+      <div className="title">PROJECTS</div>
+      <div className="grid">
+        <div className="card">
           <a
               href="https://spoileralert.nyc/"
               target="_blank"
@@ -22,79 +20,79 @@ export default function Projects() {
           >
             <img
                 src="/SPOILERALERT.gif"
-                className="w-[325px] h-[200px]"
+                className="cardImage"
                 alt="Spoiler Alert"
             />
           </a>
-          <div className="p-[16px] flex-grow">
+          <div className="cardContent">
             {" "}
             {}
-            <h3 className="text-[28px] mb-[8px] font-inter">Spoiler Alert</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+            <h3 className="cardTitle">Spoiler Alert</h3>
+            <p className="cardDescription">
               Spoiler Alert is a full-stack application where given an image or a search query,
               retrieves data from the FDA API of any active recalls that are currently being investigated!
               Simply take a picture of the product, or type in the name of the product, and it will instantly
               retrieve the data.
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
+          <div className="cardFooter">
             <a
                 href="https://github.com/BaljinderHothi/SpoilerAlert"
                 target="_blank"
-                className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+                className="githubLink"
             >
-              <IoLogoGithub className="text-[36px]" />
+              <IoLogoGithub className="iconLarge" />
             </a>
-            <div className="flex flex-row space-x-[2.5px] mr-2">
-              <SiNextdotjs className="w-[32px]" />
-              <IoLogoVercel className="w-[32px]" />
-              <SiMongodb className="w-[32px]" />
-              <SiGodaddy className="w-[32px]" />
-              <SiGooglegemini className="w-[32px]" />
+            <div className="iconsRow">
+              <SiNextdotjs className="icon" />
+              <IoLogoVercel className="icon" />
+              <SiMongodb className="icon" />
+              <SiGodaddy className="icon" />
+              <SiGooglegemini className="icon" />
             </div>
           </div>
         </div>
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+        <div className="card">
           <a href="https://discord.com/oauth2/authorize?client_id=1299060600860839957&permissions=8&integration_type=0&scope=bot">
             <img
                 src="/Silvercord.gif"
-                className="w-[325px] h-[200px]"
+                className="cardImage"
                 alt="Silvercord"
             />
           </a>
-          <div className="p-[16px] flex-grow">
-            <h3 className="text-[28px] mb-[8px]">Silvercord</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+          <div className="cardContent">
+            <h3 className="cardTitle">Silvercord</h3>
+            <p className="cardDescription">
               Silvercord is a Discord bot, an assistant for supporting you in enrolling into future
               courses, with seasonal LeetCode competitions to give an extra push to submit LeetCode problems
               to pump up your high score to your Discord server's leaderboard!
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
+          <div className="cardFooter">
             <a
                 href="https://github.com/BYTE-Club-CCNY/Silvercord"
                 target="_blank"
-                className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+                className="githubLink"
             >
-              <IoLogoGithub className="text-[36px]" />
+              <IoLogoGithub className="iconLarge" />
             </a>
-            <div className="flex flex-row space-x-[2.5px] mr-2">
-              <FaDiscord className="w-[40px]"/>
+            <div className="iconsRow">
+              <FaDiscord className="iconXl"/>
               {/*<SiLangchain className="w-[42px]"/>*/}
-              <SiAmazondynamodb className="w-[32px]"/>
-              <FaGolang className="w-[32px]"/>
+              <SiAmazondynamodb className="icon"/>
+              <FaGolang className="icon"/>
             </div>
           </div>
         </div>
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+        <div className="card">
           <img
             src="/schedule_snake.gif"
-            className="w-[325px] h-[200px]"
+            className="cardImage"
             alt="Schedule Snake"
           />
-          <div className="p-[16px] flex-grow">
-            <h3 className="text-[28px] mb-[8px]">Schedule Snake</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+          <div className="cardContent">
+            <h3 className="cardTitle">Schedule Snake</h3>
+            <p className="cardDescription">
               A web application built with <strong>Next.JS</strong> and{" "}
               <strong>SQL</strong> to ensure a smooth enrollment process into
               university courses. Professors create courses on Schedule Snake
@@ -102,30 +100,30 @@ export default function Projects() {
               courses.
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
+          <div className="cardFooter">
             <a
               href="https://github.com/jaynopponep/schedule-snake"
               target="_blank"
-              className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+              className="githubLink"
             >
-              <IoLogoGithub className="text-[36px]" />
+              <IoLogoGithub className="iconLarge" />
             </a>
-            <div className="flex flex-row space-x-[2.5px] mr-2">
-              <SiNextdotjs className="w-[32px]" />
-              <DiMysql className="w-[32px]" />
-              <RiTailwindCssFill className="w-[32px]" />
+            <div className="iconsRow">
+              <SiNextdotjs className="icon" />
+              <DiMysql className="icon" />
+              <RiTailwindCssFill className="icon" />
             </div>
           </div>
         </div>
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+        <div className="card">
           <img
             src="/dovelop-cli.gif"
-            className="w-[325px] h-[200px]"
+            className="cardImage"
             alt="Dovelop AI"
           />
-          <div className="p-[16px] flex-grow">
-            <h3 className="text-[28px] mb-[8px]">Dovelop AI</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+          <div className="cardContent">
+            <h3 className="cardTitle">Dovelop AI</h3>
+            <p className="cardDescription">
               A CLI to do list application made to improve productivity for
               developers and other users. Be able to track your to do list and
               edit them in real time while you are working on a project! Dovelop
@@ -133,65 +131,65 @@ export default function Projects() {
               for task breakdowns, and local JSON data to store to do list data
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
+          <div className="cardFooter">
             <a
               href="https://github.com/jaynopponep/dovelop-CLI"
               target="_blank"
-              className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+              className="githubLink"
             >
-              <IoLogoGithub className="text-[36px]" />
+              <IoLogoGithub className="iconLarge" />
             </a>
-            <div className="flex flex-row  mr-2">
-              <SiOpenai className="w-[32px]" />
-              <FaGolang className="ml-auto w-[52px]" />
+            <div className="iconsRow">
+              <SiOpenai className="icon" />
+              <FaGolang className="icon iconRight iconXXl" />
             </div>
           </div>
         </div>
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+        <div className="card">
           <img
             src="/byte_website.gif"
-            className="w-[325px] h-[200px]"
+            className="cardImage"
             alt="BYTE Website"
           />
-          <div className="p-[16px] flex-grow">
-            <h3 className="text-[28px] mb-[8px]">BYTE Club Website</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+          <div className="cardContent">
+            <h3 className="cardTitle">BYTE Club Website</h3>
+            <p className="cardDescription">
               A website built with Next.JS to showcase CCNY's BYTE Club website,
               its projects, and its eboard.
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
-            <div className="flex items-center justify-between mt-auto mb-[10px]">
+          <div className="cardFooter">
+            <div className="doubleLinks">
               <a
                 href="https://github.com/BYTE-Club-CCNY/byte"
                 target="_blank"
-                className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+                className="githubLink"
               >
-                <IoLogoGithub className="text-[36px]" />
+                <IoLogoGithub className="iconLarge" />
               </a>
               <a
                 href="https://byteccny.com/"
                 target="_blank"
-                className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+                className="githubLink"
               >
-                <FaExternalLinkAlt className="text-[36px]" />
+                <FaExternalLinkAlt className="iconLarge" />
               </a>
             </div>
-            <div className="flex flex-row space-x-[6px] mr-2">
-              <SiNextdotjs className="w-[32px]" />
-              <RiTailwindCssFill className="w-[32px]" />
+            <div className="iconsRow iconsRowWide">
+              <SiNextdotjs className="icon" />
+              <RiTailwindCssFill className="icon" />
             </div>
           </div>
         </div>
-        <div className="w-[325px] bg-[#f0f0f0] border-r-[8px] overflow-hidden m-[20px] shadow-customShadow flex flex-col">
+        <div className="card">
           <img
             src="/fivebhais.gif"
-            className="w-[325px] h-[200px]"
+            className="cardImage"
             alt="Five Bhais"
           />
-          <div className="p-[16px] flex-grow">
-            <h3 className="text-[28px] mb-[8px]">Five Bhais Restaurant</h3>
-            <p className="text-gray-600 text-[15px] leading-tight font-arsmaquette">
+          <div className="cardContent">
+            <h3 className="cardTitle">Five Bhais Restaurant</h3>
+            <p className="cardDescription">
               A project built with other engineers demonstrating an online
               restaurant system where users are able to order takeout or
               delivery, and make dinner reservations after shopping on the menu.
@@ -199,20 +197,20 @@ export default function Projects() {
               <strong>MongoDB Atlas</strong>.
             </p>
           </div>
-          <div className="flex items-center justify-between mt-auto">
+          <div className="cardFooter">
             <a
               href="https://github.com/jaynopponep/five-bhais"
               target="_blank"
-              className="ml-2 inline-block px-[8px] py-[8px] bg-gray-800 text-white no-underline rounded text-sm"
+              className="githubLink"
             >
-              <IoLogoGithub className="text-[36px]" />
+              <IoLogoGithub className="iconLarge" />
             </a>
-            <div className="flex flex-row space-x-[2px] mr-2">
-              <SiNextdotjs className="w-[32px]" />
-              <IoLogoJavascript className="w-[32px]" />
-              <SiMongodb className="w-[32px]" />
-              <SiPython className="w-[32px]" />
-              <RiTailwindCssFill className="w-[32px]" />
+            <div className="iconsRow iconsRowTight">
+              <SiNextdotjs className="icon" />
+              <IoLogoJavascript className="icon" />
+              <SiMongodb className="icon" />
+              <SiPython className="icon" />
+              <RiTailwindCssFill className="icon" />
             </div>
           </div>
         </div>

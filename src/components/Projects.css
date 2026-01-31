@@ -1,0 +1,118 @@
+.projects.main {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.projects .title {
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: var(--textPrimary);
+  margin-bottom: 3rem;
+}
+
+.projects .grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects .card {
+  width: 325px;
+  background-color: var(--cardBackground);
+  border-right: 8px solid transparent;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .cardImage {
+  width: 325px;
+  height: 200px;
+}
+
+.projects .cardContent {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.projects .cardTitle {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.projects .cardDescription {
+  color: rgb(75 85 99);
+  font-size: 15px;
+  line-height: 1.25;
+  font-family: 'ArsMaquette', sans-serif;
+}
+
+.projects .cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.projects .githubLink {
+  margin-left: 0.5rem;
+  display: inline-block;
+  padding: 8px;
+  background-color: rgb(31 41 55);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.projects .iconsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5px;
+  margin-right: 0.5rem;
+}
+
+.projects .iconsRowWide {
+  gap: 6px;
+}
+
+.projects .iconsRowTight {
+  gap: 2px;
+}
+
+.projects .icon {
+  width: 32px;
+}
+
+.projects .iconLarge {
+  width: 36px;
+}
+
+.projects .iconXl {
+  width: 40px;
+}
+
+.projects .iconXXl {
+  width: 52px;
+}
+
+.projects .iconRight {
+  margin-left: auto;
+}
+
+.projects .doubleLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

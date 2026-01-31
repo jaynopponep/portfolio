@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaGraduationCap } from 'react-icons/fa';
+import './Timeline.css';
 
 type TimelineEntry = {
     title: string;
@@ -68,43 +69,43 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
     ];
 
     return (
-        <section className="py-24 bg-[#e1edd0]">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-inter font-extrabold text-[#080b05]">{title}</h2>
+        <section className="timeline section">
+            <div className="container">
+                <div className="headingWrapper">
+                    <h2 className="heading">{title}</h2>
                 </div>
 
-                <div className="relative">
-                    <div className="absolute left-[35%] top-0 bottom-0 w-px bg-black/10"></div>
+                <div className="timelineTrack">
+                    <div className="line" />
 
                     {timelineEntries.map((entry, index) => (
-                        <div key={index} className="relative pt-6 pb-8">
-                            <div className="absolute left-[35%] -ml-6 top-6 h-12 w-12 bg-gray-800 rounded-full flex items-center justify-center text-white overflow-hidden">
+                        <div key={index} className="entry">
+                            <div className="dot">
                                 {entry.icon ? (
                                     <Image
                                         src={entry.icon}
                                         alt={`${entry.company} icon`}
                                         width={48}
                                         height={48}
-                                        className="w-full h-full object-cover"
+                                        className="dotImage"
                                     />
                                 ) : (
                                     <FaGraduationCap className="text-xl"/>
                                 )}
                             </div>
 
-                            <div className="float-left w-[35%] pr-24 text-right">
-                                <h3 className="text-xl font-inter font-extrabold text-[#8f9c7c]">{entry.title}</h3>
-                                <p className="text-sm text-gray-500">{entry.date}</p>
+                            <div className="left">
+                                <h3 className="leftTitle">{entry.title}</h3>
+                                <p className="leftDate">{entry.date}</p>
                             </div>
 
-                            <div className="ml-[35%] pl-16">
-                                <h4 className="text-lg font-inter font-extrabold text-gray-800 relative pb-5 mb-4 after:content-[''] after:block after:h-[3px] after:w-12 after:bg-black/20 after:absolute after:left-0 after:bottom-0">
+                            <div className="right">
+                                <h4 className="company">
                                     {entry.company}
                                 </h4>
                                 <div>
                                     {entry.description.map((bullet, bulletIndex) => (
-                                        <p key={bulletIndex} className="mb-3 text-gray-600">
+                                        <p key={bulletIndex} className="bullet">
                                             • {bullet}
                                         </p>
                                     ))}
