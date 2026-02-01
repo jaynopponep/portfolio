@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'ArsMaquette';
-  src: url("/fonts/ars-maquette-regular.ttf") format('truetype');
+  font-family: 'KaliceRegular';
+  src: url("/fonts/kalice/Kalice-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'KaliceMedium';
+  src: url("/fonts/kalice/Kalice-Medium.ttf") format('truetype');
   font-weight: normal;
-  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KaliceBold';
+  src: url("/fonts/kalice/Kalice-Bold.ttf") format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
@@ -43,26 +53,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Belgrano';
-  src: url("/fonts/belgrano.ttf") format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Convergence';
-  src: url("/fonts/convergence.ttf") format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url("/fonts/inter.ttf") format('truetype');
-  font-style: normal;
-}
-
 body {
-  font-family: 'ArsMaquette', sans-serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -80,6 +72,10 @@ body {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --backgroundMain: #1a1a1a;
+    --backgroundSecondary: #0f0f0f;
+    --textPrimary: #f2f2f2;
+    --cardBackground: #2a2a2a;
   }
 }
 

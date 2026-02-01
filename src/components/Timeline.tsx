@@ -3,11 +3,14 @@ import Image from 'next/image';
 import { FaGraduationCap } from 'react-icons/fa';
 import './Timeline.css';
 
+type DescriptionBullet = string | { text: string; href: string };
+
 type TimelineEntry = {
     title: string;
     date: string;
     company: string;
-    description: string[];
+    companyUrl?: string;
+    description: DescriptionBullet[];
     icon?: string;
 };
 
@@ -15,45 +18,42 @@ type TimelineProps = {
     title?: string;
 };
 
-const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
+const Timeline: React.FC<TimelineProps> = ({ title = "Experience" }) => {
     const timelineEntries: TimelineEntry[] = [
         {
             title: "Software Engineer Intern",
             date: "June 2025 - Present",
             company: "QAD Redzone",
-            icon: "/redzone.webp",
+            companyUrl: "https://rzsoftware.com/",
+            icon: "/redzone.png",
             description: [
-                "QAD Redzone web applications and services with Vue.JS & TypeScript",
+                "React Native & VueJS development for the main Redzone and admin dashboard app",
+                "Go microservices for feature rollouts and beta access control",
+                "Scala REST API for compliance monitoring"
             ]
         },
         {
-            title: "Software Engineer",
+            title: "Full-Stack Software Engineer",
             date: "January 2025 - May 2025",
             company: "Easy Meets",
             icon: "/easy_meets_logo.jpeg",
             description: [
-                "Engineered a scalable backend service using Go Fiber, reducing HTTP response time by 70%, enhancing user\n experience and system efficiency",
-                "Optimized a secure JWT authentication system with Redis, decreasing latency by 50%, and reducing database\n lookups by 70%",
+                "Go (Fiber) backend HTTP service, scaled for 1,000+ users",
+                "JWT authentication with Redis caching to reduce latency and database lookups by 60%",
             ]
         },
         {
-            title: "Mentor & Project Manager",
-            date: "January 2025 - Present",
+            title: "Mentor & Campus Ambassador",
+            date: "January 2025 - December 2025",
             company: "Build Your Technical Experience, ACM",
+            companyUrl: "https://github.com/BYTE-Club-CCNY/",
             icon: "/ACM.png",
             description: [
-                "Design roadmaps and agile-sprint cycles to efficiently guide BYTE engineers in delivering scalable full-stack\n applications, ensuring best software development practices and industry standards",
-                "Coach teams through presentations and live demos of ACM board members and community"
-            ]
-        },
-        {
-            title: "Machine Learning & Open Source Fellow",
-            date: "July 2024 - May 2025",
-            company: "CUNY Tech Prep",
-            icon: "/ctp-logo.png",
-            description: [
-                "Pioneered an OpenCV-YOLOv8 model to classify American Sign Language hand signs into English text",
-                "Building a Language Server Protocol (LSP) for VSCode that interacts directly with the LLM through prompt\n chaining"
+                "Voice-controlled Raspberry Pi inventory system with Google speech-to-text and NLP",
+                {
+                    text: "Organized CCNY's first hackathon & workshops with Google Labs in $10k prize pool and budget",
+                    href: "https://www.bytehacks.org/"
+                }
             ]
         },
         {
@@ -85,8 +85,10 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
                                     <Image
                                         src={entry.icon}
                                         alt={`${entry.company} icon`}
-                                        width={48}
-                                        height={48}
+                                        width={96}
+                                        height={96}
+                                        sizes="48px"
+                                        unoptimized
                                         className="dotImage"
                                     />
                                 ) : (
@@ -101,12 +103,24 @@ const Timeline: React.FC<TimelineProps> = ({ title = "My Experiences" }) => {
 
                             <div className="right">
                                 <h4 className="company">
-                                    {entry.company}
+                                    {entry.companyUrl ? (
+                                        <a href={entry.companyUrl} target="_blank" rel="noopener noreferrer" className="companyLink">
+                                            {entry.company}
+                                        </a>
+                                    ) : (
+                                        entry.company
+                                    )}
                                 </h4>
                                 <div>
                                     {entry.description.map((bullet, bulletIndex) => (
                                         <p key={bulletIndex} className="bullet">
-                                            • {bullet}
+                                            • {typeof bullet === "string" ? (
+                                                bullet
+                                            ) : (
+                                                <a href={bullet.href} target="_blank" rel="noopener noreferrer" className="bulletLink">
+                                                    {bullet.text}
+                                                </a>
+                                            )}
                                         </p>
                                     ))}
                                 </div>

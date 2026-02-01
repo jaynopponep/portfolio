@@ -1,7 +1,7 @@
 .home.section {
   background: transparent;
-  color: white;
-  font-family: 'SwitzerRegular';
+  color: var(--textPrimary);
+  font-family: 'KaliceRegular';
 }
 
 .home .wrapper {
@@ -30,137 +30,33 @@
   background-color: var(--textPrimary);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3rem;
   line-height: 2.5rem;
-  font-family: 'SwitzerMedium', serif;
+  font-family: 'KaliceBold', sans-serif;
   color: transparent;
   padding: 12px;
 }
 
-.home .buttons {
+.home .icons {
   margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-}
-
-.home .btn {
-  position: relative;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-radius: 0.125rem;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: white;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  gap: 1.5rem;
+}
+
+.home .iconLink {
+  color: var(--textPrimary);
   text-decoration: none;
-  font-family: 'Belgrano', serif;
+  transition: opacity 0.2s ease;
 }
 
-@media (min-width: 640px) {
-  .home .btn {
-    width: auto;
-  }
+.home .iconLink:hover {
+  opacity: 0.8;
 }
 
-.home .btnResume {
-  border: 1px solid rgb(31 41 55);
-  background-color: var(--textPrimary);
-}
-
-.home .btnResume:hover {
-  color: black;
-}
-
-.home .btnResume .btnOverlay {
-  position: absolute;
-  inset: 0;
-  background: white;
-  width: 0;
-  transition: all 0.175s ease-in-out;
-}
-
-.home .btnResume:hover .btnOverlay {
-  width: 100%;
-}
-
-.home .btnResume .btnText {
-  position: relative;
-  font-size: 1.25rem;
-  line-height: 1;
-}
-
-.home .btnResume:hover .btnText {
-  color: rgb(31 41 55);
-}
-
-.home .btnLinkedIn {
-  border: 1px solid rgb(37 99 235);
-  background-color: rgb(37 99 235);
-  padding: 1.25rem 2.5rem;
-}
-
-.home .btnLinkedIn:hover {
-  color: white;
-}
-
-.home .btnLinkedIn .btnOverlay {
-  position: absolute;
-  inset: 0;
-  background: white;
-  width: 0;
-  transition: all 0.175s ease-in-out;
-}
-
-.home .btnLinkedIn:hover .btnOverlay {
-  width: 100%;
-}
-
-.home .btnLinkedIn .btnText {
-  position: relative;
-}
-
-.home .btnLinkedIn:hover .btnText {
-  color: rgb(37 99 235);
-}
-
-.home .btnGithub {
-  border: 1px solid rgb(31 41 55);
-  background-color: var(--textPrimary);
-  padding: 1.25rem 2.5rem;
-}
-
-.home .btnGithub:hover {
-  color: black;
-}
-
-.home .btnGithub .btnOverlay {
-  position: absolute;
-  inset: 0;
-  background: white;
-  width: 0;
-  transition: all 0.175s ease-in-out;
-}
-
-.home .btnGithub:hover .btnOverlay {
-  width: 100%;
-}
-
-.home .btnGithub .btnText {
-  position: relative;
-}
-
-.home .btnGithub:hover .btnText {
-  color: rgb(31 41 55);
-}
-
-.home .btnIcon {
-  width: 2.5rem;
-  height: 2.5rem;
-  object-fit: contain;
+.home .icon {
+  width: 2rem;
+  height: 2rem;
 }

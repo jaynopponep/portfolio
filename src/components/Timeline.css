@@ -18,8 +18,7 @@
 
 .timeline .heading {
   font-size: 2.25rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'KaliceBold', sans-serif;
   color: var(--textPrimary);
 }
 
@@ -49,13 +48,17 @@
   top: 1.5rem;
   height: 3rem;
   width: 3rem;
-  background-color: rgb(31 41 55);
+  background-color: white;
   border-radius: 9999px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.85), 0 4px 12px rgb(0 0 0 / 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   overflow: hidden;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .timeline .dotImage {
@@ -73,13 +76,13 @@
 
 .timeline .leftTitle {
   font-size: 1.25rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'KaliceBold', sans-serif;
   color: #8f9c7c;
 }
 
 .timeline .leftDate {
   font-size: 0.875rem;
+  font-family: 'KaliceRegular', sans-serif;
   color: rgb(107 114 128);
 }
 
@@ -90,8 +93,7 @@
 
 .timeline .company {
   font-size: 1.125rem;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
+  font-family: 'KaliceBold', sans-serif;
   color: rgb(31 41 55);
   position: relative;
   padding-bottom: 1.25rem;
@@ -109,7 +111,32 @@
   bottom: 0;
 }
 
+.timeline .companyLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline .companyLink:hover {
+  text-decoration: underline;
+}
+
 .timeline .bullet {
   margin-bottom: 0.75rem;
+  font-family: 'KaliceRegular', sans-serif;
   color: rgb(75 85 99);
+}
+
+.timeline .bulletLink {
+  color: var(--textPrimary);
+  text-decoration: underline;
+}
+
+.timeline .bulletLink:hover {
+  opacity: 0.8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .timeline .dot {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25), 0 4px 12px rgb(0 0 0 / 0.35);
+  }
 }
