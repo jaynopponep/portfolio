@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 import Navbar from "@/components/Navbar";
 import Timeline from "@/components/Timeline";
