@@ -2,9 +2,9 @@ import React from "react";
 import { IoLogoGithub, IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
 import { FaExternalLinkAlt, FaDiscord } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { SiNextdotjs, SiPython, SiAmazondynamodb, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini } from "react-icons/si";
+import { SiNextdotjs, SiPython, SiAmazondynamodb, SiOpenai, SiMongodb, SiGodaddy, SiGooglegemini, SiVuedotjs, SiGitlab } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { DiMysql } from "react-icons/di";
+import { DiMysql, DiRuby } from "react-icons/di";
 import "./Projects.css";
 
 type IconComponent = React.ComponentType<{ className?: string }>;
@@ -27,6 +27,22 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "GitLab Open Source Contributor",
+    description: (
+      <>
+        
+      </>
+    ),
+    image: "/gitlab.png",
+    imageAlt: "Gitlab Open Source",
+    imageLink: "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/219267",
+    githubUrl: "https://gitlab.com/gitlab-org/gitlab",
+    techIcons: [
+      { Icon: SiVuedotjs },
+      { Icon: DiRuby },
+    ],
+  },
   {
     title: "Spoiler Alert",
     description: (
@@ -82,7 +98,7 @@ const projects: Project[] = [
     title: "Schedule Snake",
     description: (
       <>
-        Our faster and more seamless version of admitting into college courses at university. 
+        Our faster and more seamless version of admitting into college courses at university.
       </>
     ),
     image: "/schedule_snake.gif",
@@ -167,8 +183,13 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="githubLink"
+                  aria-label={project.githubUrl.includes("gitlab.com") ? "GitLab repository" : "GitHub repository"}
                 >
-                  <IoLogoGithub className="iconLarge" />
+                  {project.githubUrl.includes("gitlab.com") ? (
+                    <SiGitlab className="iconLarge" />
+                  ) : (
+                    <IoLogoGithub className="iconLarge" />
+                  )}
                 </a>
               ) : null}
               <div className={`iconsRow ${project.iconsRowClassName ?? ""}`.trim()}>
