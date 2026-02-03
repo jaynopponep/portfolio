@@ -63,13 +63,12 @@ const Timeline: React.FC<TimelineProps> = ({ title = "Experience" }) => {
             icon: "/CTIIC.png",
             description: [
                 "Trained and optimized an NLP Generative AI model using TDD to process 10,000+ data entries, and achieving\n a 70% accuracy in identifying AI-written text and co-authoring a research paper",
-                "Deployed a full-stack Next.JS React frontend and Python Flask backend handling 150+ users"
             ]
         }
     ];
 
     return (
-        <section className="timeline section">
+        <section id="experiences" className="timeline section">
             <div className="container">
                 <div className="headingWrapper">
                     <h2 className="heading">{title}</h2>

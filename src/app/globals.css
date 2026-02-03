@@ -27,26 +27,6 @@
 }
 
 @font-face {
-  font-family: 'SwitzerLight';
-  src: url("/fonts/Switzer-Light.otf") format('opentype');
-}
-
-@font-face {
-  font-family: 'SwitzerRegular';
-  src: url("/fonts/Switzer-Regular.otf") format('opentype');
-}
-
-@font-face {
-  font-family: 'SwitzerMedium';
-  src: url("/fonts/Switzer-Medium.otf") format('opentype');
-}
-
-@font-face {
-  font-family: 'SwitzerSemiBold';
-  src: url("/fonts/Switzer-SemiBold.otf") format('opentype');
-}
-
-@font-face {
   font-family: 'BasicSans';
   src: url("/fonts/basic-sans.ttf") format('truetype');
   font-weight: normal;

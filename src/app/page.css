@@ -27,14 +27,10 @@
 }
 
 .home .title {
-  background-color: var(--textPrimary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--textPrimary);
   font-size: 3rem;
   line-height: 2.5rem;
   font-family: 'KaliceBold', sans-serif;
-  color: transparent;
   padding: 12px;
 }
 
