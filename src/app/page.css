@@ -45,11 +45,9 @@
 .home .iconLink {
   color: var(--textPrimary);
   text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.home .iconLink:hover {
-  opacity: 0.8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .icon {
